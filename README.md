@@ -16,12 +16,14 @@ use Leshkens\OrchidTinyMCEField\TinyMCE;
 TinyMCE::make('tinymce');
 ```
 
-Avaialble methods:
+Available methods:
 
 ```php
 TinyMCE::make('tinymce')
     ->config([
-        //TinyMCE config
+        // TinyMCE config
+        'language_url' => asset('/js/tinymce/langs/ru.js'),
+        ...        
     ])
     ->uploadEndpoint('') // You image upload custom endpoint
     ->uploadStorage('') // Upload storage
