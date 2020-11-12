@@ -1,0 +1,50 @@
+{
+    "name": "leshkens/orchid-tinymce-field",
+    "description": "Orchid TinyMCE field",
+    "license": "MIT",
+    "keywords": [
+        "orchid",
+        "tinymce",
+        "wysiwyg",
+        "editor",
+        "field"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "tabuna",
+            "email": "bliz48rus@gmail.com"
+        },
+        {
+            "name": "Leshkens",
+            "email": "web@achugunov.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "orchid/platform": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leshkens\\OrchidTinyMCEField\\": "src"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Leshkens\\OrchidTinyMCEField\\Providers\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
